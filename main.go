@@ -9,7 +9,7 @@ import (
 	"github.com/google/uuid"
 )
 
-var rxUUID = regexp.MustCompile(`@UUID@`)
+var rxUUID = regexp.MustCompile(`(?:@UUID@|PUT-GUID-HERE)`)
 
 func mains(args []string) error {
 	for _, src := range args {
